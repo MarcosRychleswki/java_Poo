@@ -20,14 +20,19 @@ Scanner sc = new Scanner(System.in);
 		// essa var name, price e quantity é uma var temporaria apenas para reveber o valor
 		System.out.println("Enter with price: ");
 		double price = sc.nextDouble();
-	
+		
 		
 		Product product = new Product (name, price);
 		
 		
+		// alterar o valor da entrada set == alterar
+		product.setName("Radio");
+		product.setPrice(2000);
 		
-		
-		System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+		System.out.println(product.getName());
+		System.out.println();
+		System.out.println(product.getPrice());
+		System.out.println();
 		System.out.println("Product data: " + product);
 		System.out.println("");
 		System.out.println("Enter the number of products to be added in stock: ");
